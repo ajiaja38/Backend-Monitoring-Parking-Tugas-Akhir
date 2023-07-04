@@ -143,7 +143,6 @@ const init = async () => {
 
   await databases()
   await server.start()
-  console.log(`Server running on https://${process.env.HTTPS_HOST}:${process.env.HTTPS_PORT}`)
 }
 
 init()

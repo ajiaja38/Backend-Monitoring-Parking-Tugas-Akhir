@@ -99,7 +99,7 @@ class UsersHandler {
 
     this._uploadValidator.validateImageHeaders(avatar.hapi.headers)
     const filename = await this._storageService.writeFile(avatar, avatar.hapi)
-    const fileLocation = `https://${process.env.HTTPS_HOST}:${process.env.HTTPS_PORT}/user/images/${filename}`
+    const fileLocation = `https://camera.pptik.id/api/user/images/${filename}`
 
     await this._service.editUserAvatarById(userId, filename, fileLocation)
 
