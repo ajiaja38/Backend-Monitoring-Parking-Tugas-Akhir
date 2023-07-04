@@ -81,7 +81,7 @@ const init = async () => {
     method: 'GET',
     path: '/',
     handler: () => {
-      return '<h1>Hello World, selamat datang Hapi API Smart Bell</h1>'
+      return '<h1>Hello World, selamat datang Hapi API Smart Parking</h1>'
     }
   })
 
